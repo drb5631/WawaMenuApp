@@ -42,5 +42,10 @@ namespace WawaMenuApp
             sbw.Show();
             this.Close();
         }
+
+        private void ClearOrderBtn_Click(object sender, RoutedEventArgs e)
+        {
+            orderBox.Items.Clear();
+        }
     }
 }

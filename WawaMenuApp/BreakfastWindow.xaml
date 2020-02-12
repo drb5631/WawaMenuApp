@@ -25,7 +25,7 @@
                 <TextBlock HorizontalAlignment="Center" FontFamily="Comic Sans MS" FontSize="20" FontWeight="Bold" Foreground="#FFFAFAFA"><Run Text="Breakfast Sandwiches"/></TextBlock>
             </StackPanel>
         </Button>
-        <Button Margin="135.8,89,272.6,147" Click="Button_Click" Background="#FF73411C" Grid.Column="2" Grid.RowSpan="2">
+        <Button Margin="158,52,246,208" Click="Button_Click" Background="#FF73411C" Grid.Column="2" Grid.RowSpan="2">
             <StackPanel>
                 <Image Source="/WawaMenuApp;component/images/oatmeal.png" Height="125" Width="216" />
                 <TextBlock HorizontalAlignment="Center" FontFamily="Comic Sans MS" FontSize="20" FontWeight="Bold" Foreground="#FFFAFAFA"><Run Text="Oatmeal"/></TextBlock>
@@ -37,16 +37,27 @@
                 <TextBlock HorizontalAlignment="Center" FontFamily="Comic Sans MS" FontSize="20" FontWeight="Bold" Foreground="#FFFAFAFA"><Run Text="Fruit Bowl"/></TextBlock>
             </StackPanel>
         </Button>
-        <ListBox HorizontalAlignment="Left" Height="326" Margin="424.8,47,0,0" VerticalAlignment="Top" Width="197" Grid.Column="2" Grid.RowSpan="2">
+        <ListBox x:Name="orderBox" HorizontalAlignment="Left" Height="326" Margin="424.8,47,0,0" VerticalAlignment="Top" Width="197" Grid.Column="2" Grid.RowSpan="2">
             <ListBoxItem Content="Ham Sandwich...$5.00" FontSize="18"/>
             <ListBoxItem Content="Fruit Bowl...$3.00" FontSize="18"/>
             <ListBoxItem Content="Total: $8.00" FontSize="18"/>
         </ListBox>
-        <Button x:Name="backButton" HorizontalAlignment="Left" Margin="239.8,181.6,0,0" VerticalAlignment="Top" Width="180" Height="47" FontFamily="Segoe UI Black" FontSize="20" Background="#FFD93030" Click="BackButton_Click" Grid.Column="2" Grid.Row="1">
+        <Button x:Name="backButton" HorizontalAlignment="Left" Margin="505,182,0,0" VerticalAlignment="Top" Width="114" Height="28" FontFamily="Segoe UI Black" FontSize="20" Background="#FFD93030" Click="BackButton_Click" Grid.Column="2" Grid.Row="1">
             <StackPanel>
                 <TextBlock HorizontalAlignment="Center" FontFamily="Comic Sans MS" FontSize="20" FontWeight="Bold" Foreground="#FFFAFAFA"><Run Text="BACK"/></TextBlock>
             </StackPanel>
         </Button>
-        <Image HorizontalAlignment="Left" Height="47" Margin="139.8,181.6,0,0" VerticalAlignment="Top" Width="100" Stretch="Fill" Source="images/back.png" Grid.Column="2" Grid.Row="1"/>
+        <Image HorizontalAlignment="Left" Height="28" Margin="425,182,0,0" VerticalAlignment="Top" Width="80" Stretch="Fill" Source="images/back.png" Grid.Column="2" Grid.Row="1"/>
+        <Button x:Name="sandwichesClick_Copy" Margin="158,105,246,52" Click="SandwichesClick_Click" Background="#FF73411C" Grid.Column="2" Grid.Row="1">
+            <StackPanel>
+                <Image Source="images/bowl.png" Height="120" Width="215" VerticalAlignment="Bottom" HorizontalAlignment="Left" />
+                <TextBlock HorizontalAlignment="Center" FontFamily="Comic Sans MS" FontSize="20" FontWeight="Bold" Foreground="#FFFAFAFA"><Run Text="Breakfast Bowl"/></TextBlock>
+            </StackPanel>
+        </Button>
+        <Button x:Name="clearOrderBtn" HorizontalAlignment="Left" Margin="461,215,0,0" VerticalAlignment="Top" Width="114" Height="28" FontFamily="Segoe UI Black" FontSize="20" Background="#FFD93030" Click="ClearOrderBtn_Click" Grid.Column="2" Grid.Row="1">
+            <StackPanel>
+                <TextBlock HorizontalAlignment="Center" FontFamily="Comic Sans MS" FontSize="18" FontWeight="Bold" Foreground="#FFFAFAFA" Width="107"><Run Text="Clear Order"/></TextBlock>
+            </StackPanel>
+        </Button>
     </Grid>
 </Window>
