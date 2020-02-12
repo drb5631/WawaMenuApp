@@ -23,5 +23,22 @@ namespace WawaMenuApp
         {
             InitializeComponent();
         }
+
+        private void SecondBreakfastBackBtn_Click(object sender, RoutedEventArgs e)
+        {
+            BreakfastWindow bf = new BreakfastWindow();
+            bf.Show();
+            this.Close();
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+        
+        }
+
+        private void EggSandwich_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

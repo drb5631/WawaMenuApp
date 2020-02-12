@@ -35,5 +35,12 @@ namespace WawaMenuApp
         {
       
         }
+
+        private void SandwichesClick_Click(object sender, RoutedEventArgs e)
+        {
+            SecondBreafastWindow sbw = new SecondBreafastWindow();
+            sbw.Show();
+            this.Close();
+        }
     }
 }
