@@ -10,24 +10,18 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace WawaMenuApp
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for SecondBreafastWindow.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class SecondBreafastWindow : Window
     {
-        public MainWindow()
+        public SecondBreafastWindow()
         {
             InitializeComponent();
-        }
-
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-            MessageBox.Show("This button works");
         }
     }
 }

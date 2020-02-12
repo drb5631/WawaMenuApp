@@ -55,7 +55,14 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Page Include="MainWindow.xaml">
+    <Compile Include="SecondBreafastWindow.xaml.cs">
+      <DependentUpon>SecondBreafastWindow.xaml</DependentUpon>
+    </Compile>
+    <Page Include="BreakfastWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="HomeWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
@@ -63,10 +70,17 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="MainWindow.xaml.cs">
-      <DependentUpon>MainWindow.xaml</DependentUpon>
+    <Compile Include="BreakfastWindow.xaml.cs">
+      <DependentUpon>BreakfastWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HomeWindow.xaml.cs">
+      <DependentUpon>HomeWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="SecondBreafastWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs">
@@ -98,6 +112,18 @@
     <Resource Include="images\Beverages.png" />
     <Resource Include="images\breakfast.png" />
     <Resource Include="images\lunchdinner.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\oatmeal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\fruit.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\burrito.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\back.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
