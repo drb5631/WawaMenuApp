@@ -31,11 +31,6 @@ namespace WawaMenuApp
             this.Close();
         }
 
-        private void ColdbrewButton_Click(object sender, RoutedEventArgs e)
-        {
-            MessageBox.Show("This button works");
-        }
-
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             MessageBox.Show("This button works");

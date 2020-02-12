@@ -32,11 +32,16 @@ namespace WawaMenuApp
             this.Close();
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void BeverageButton(object sender, RoutedEventArgs e)
         {
             BeverageWindow bw = new BeverageWindow();
             bw.Show();
             this.Close();
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show("This button works.");
         }
     }
 }

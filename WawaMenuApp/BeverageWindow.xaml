@@ -14,15 +14,15 @@
         <Rectangle Fill="#FFE7D6BA" HorizontalAlignment="Left" Height="47" Margin="0,373,-0.4,0" VerticalAlignment="Top" Width="794" Grid.ColumnSpan="2"/>
         <Rectangle Fill="#FFE7D6BA" HorizontalAlignment="Left" Height="47" Margin="0,0,-0.4,0" VerticalAlignment="Top" Width="794" Grid.ColumnSpan="2"/>
         <TextBlock Margin="15,10,4.6,0" TextWrapping="Wrap" Text="Welcome to Wawa" VerticalAlignment="Top" Height="31" Width="774" FontFamily="Officina Sans" FontSize="22" Foreground="Red" FontWeight="Bold" Grid.ColumnSpan="2"/>
-        <Button x:Name="ColdbrewButton" Margin="48,52,221.54,218" Background="#FF73411C" Click="ColdbrewButton_Click">
+        <Button Margin="51,67,242.6,217" Background="#FF73411C" Click="Button_Click">
             <StackPanel>
-                <Image Source="/WawaMenuApp;component/images/coldbrew.png" Height="120" Width="113" VerticalAlignment="Bottom" HorizontalAlignment="Center" />
-                <TextBlock HorizontalAlignment="Center" FontFamily="Comic Sans MS"><Run Text="Cold Brew/Iced Coffee"/></TextBlock>
+                <Image Source="/WawaMenuApp;component/images/coldbrew.png" Height="100" Width="100" VerticalAlignment="Bottom" HorizontalAlignment="Center" />
+                <TextBlock HorizontalAlignment="Center" FontFamily="Comic Sans MS" FontSize="18"><Run Text="Cold Brew/Iced Coffee"/></TextBlock>
             </StackPanel>
         </Button>
-        <Button Margin="50,217,219.54,53" Click="Button_Click">
+        <Button Margin="50,236,242.6,53" Click="Button_Click">
             <StackPanel>
-                <Image Source="/WawaMenuApp;component/images/icedchaitea.png" Height="120" Width="215" />
+                <Image Source="/WawaMenuApp;component/images/icedchaitea.png" Height="100" Width="100" />
                 <TextBlock HorizontalAlignment="Center" FontFamily="Comic Sans MS"><Run Text="Chai Tea"/></TextBlock>
             </StackPanel>
         </Button>
@@ -31,9 +31,9 @@
                 <TextBlock HorizontalAlignment="Center" FontFamily="Comic Sans MS" FontSize="20" FontWeight="Bold" Foreground="#FFFAFAFA"><Run Text="BACK"/></TextBlock>
             </StackPanel>
         </Button>
-        <Button Margin="308,54,257,216" Click="Button_Click" Grid.ColumnSpan="2">
+        <Button Margin="304,67,284.6,217" Click="Button_Click" Grid.ColumnSpan="2">
             <StackPanel>
-                <Image Source="/WawaMenuApp;component/images/fruitsmoothie.png" Height="120" Width="215" />
+                <Image Source="/WawaMenuApp;component/images/fruitsmoothie.png" Height="100" Width="100" />
                 <TextBlock HorizontalAlignment="Center"><Run Text="Fruit Smoothie" FontFamily="Comic Sans MS"/></TextBlock>
             </StackPanel>
         </Button>
@@ -42,9 +42,9 @@
             <ListBoxItem Content="Fruit Bowl...$3.00" FontSize="18"/>
             <ListBoxItem Content="Total: $8.00" FontSize="18"/>
         </ListBox>
-        <Button Margin="304,219,261,51" Click="Button_Click" Grid.ColumnSpan="2">
+        <Button Margin="304,236,284.6,53" Click="Button_Click" Grid.ColumnSpan="2">
             <StackPanel>
-                <Image Source="images/icedlattes.png" Height="120" Width="215" />
+                <Image Source="images/icedlattes.png" Height="100" Width="100" />
                 <TextBlock HorizontalAlignment="Center"><Run Text="Lattes" FontFamily="Comic Sans MS"/></TextBlock>
             </StackPanel>
         </Button>
