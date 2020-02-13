@@ -48,7 +48,7 @@
             </StackPanel>
         </Button>
         <Image HorizontalAlignment="Left" Height="28" Margin="425,182,0,0" VerticalAlignment="Top" Width="80" Stretch="Fill" Source="images/back.png" Grid.Column="2" Grid.Row="1"/>
-        <Button x:Name="sandwichesClick_Copy" Margin="158,105,246,52" Click="SandwichesClick_Click" Background="#FF73411C" Grid.Column="2" Grid.Row="1">
+        <Button Margin="158,105,246,52" Background="#FF73411C" Grid.Column="2" Grid.Row="1">
             <StackPanel>
                 <Image Source="images/bowl.png" Height="91" Width="186" VerticalAlignment="Bottom" HorizontalAlignment="Left" />
                 <TextBlock HorizontalAlignment="Center" FontFamily="Comic Sans MS" FontSize="20" FontWeight="Bold" Foreground="#FFFAFAFA"><Run Text="Breakfast Bowl"/></TextBlock>
