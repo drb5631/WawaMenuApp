@@ -38,7 +38,17 @@ namespace WawaMenuApp
 
         private void EggSandwich_Click(object sender, RoutedEventArgs e)
         {
+            MessageBox.Show("Out of Stock!");
+        }
 
+        private void Bagel_Click(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show("Out of Stock!");
+        }
+
+        private void Burrito2_Click(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show("Out of Stock!");
         }
     }
 }

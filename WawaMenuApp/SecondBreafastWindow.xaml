@@ -26,13 +26,13 @@
                     <TextBlock HorizontalAlignment="Center" FontFamily="Comic Sans MS" FontSize="20" FontWeight="Bold" Foreground="#FFFAFAFA"><Run Text="Ham and Eggs Sandwich"/></TextBlock>
                 </StackPanel>
             </Button>
-            <Button x:Name="bagel" Margin="135.8,89,272.6,147" Click="Button_Click" Background="#FF73411C" Grid.Column="2" Grid.RowSpan="2">
+            <Button x:Name="bagel" Margin="135.8,89,272.6,147" Click="Bagel_Click" Background="#FF73411C" Grid.Column="2" Grid.RowSpan="2">
                 <StackPanel>
                     <Image Source="images/bagel.png" Height="148" Width="142" Stretch="Fill" />
                     <TextBlock HorizontalAlignment="Center" FontFamily="Comic Sans MS" FontSize="20" FontWeight="Bold" Foreground="#FFFAFAFA" Width="208"><Run Text="Sausage/Egg/Cheese Bagel"/></TextBlock>
                 </StackPanel>
             </Button>
-            <Button x:Name="burrito2" Margin="26,102.6,500.6,52" Click="Button_Click" Background="#FF73411C" Grid.ColumnSpan="2" Grid.Row="1" Grid.Column="1">
+            <Button x:Name="burrito2" Margin="26,102.6,500.6,52" Click="Burrito2_Click" Background="#FF73411C" Grid.ColumnSpan="2" Grid.Row="1" Grid.Column="1">
                 <StackPanel>
                     <Image Source="images/burrito2.jpg" Height="102" Width="138" Stretch="Fill" />
                     <TextBlock HorizontalAlignment="Center" FontFamily="Comic Sans MS" FontSize="20" FontWeight="Bold" Foreground="#FFFAFAFA"><Run Text="Breakfast Burrito"/></TextBlock>
