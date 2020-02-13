@@ -16,32 +16,24 @@ using System.Windows.Shapes;
 namespace WawaMenuApp
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for Page1.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class BeverageWindow : Window
     {
-        public MainWindow()
+        public BeverageWindow()
         {
             InitializeComponent();
         }
-
-        private void BtnBreakfast_Click(object sender, RoutedEventArgs e)
+        private void BackButton_Click(object sender, RoutedEventArgs e)
         {
-            BreakfastWindow bw = new BreakfastWindow();
-            bw.Show();
-            this.Close();
-        }
-
-        private void BeverageButton(object sender, RoutedEventArgs e)
-        {
-            BeverageWindow bw = new BeverageWindow();
-            bw.Show();
+            MainWindow mw = new MainWindow();
+            mw.Show();
             this.Close();
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            MessageBox.Show("This button works.");
+            MessageBox.Show("This button works");
         }
     }
 }
