@@ -19,42 +19,42 @@
         <Rectangle Fill="#FFE7D6BA" HorizontalAlignment="Left" Height="47" Margin="0,258.6,-0.4,0" VerticalAlignment="Top" Width="794" Grid.ColumnSpan="3" Grid.Row="1"/>
         <Rectangle Fill="#FFE7D6BA" HorizontalAlignment="Left" Height="47" Margin="0,0,-0.4,0" VerticalAlignment="Top" Width="794" Grid.ColumnSpan="3"/>
         <TextBlock Margin="15,10,4.6,0" TextWrapping="Wrap" Text="Welcome to Wawa" VerticalAlignment="Top" Height="31" Width="774" FontFamily="Officina Sans" FontSize="22" Foreground="Red" FontWeight="Bold" Grid.ColumnSpan="3"/>
-        <Button x:Name="sandwichesClick" Margin="26,52,500.6,208" Click="SandwichesClick_Click" Background="#FF73411C" Grid.ColumnSpan="2" Grid.RowSpan="2" Grid.Column="1">
+        <Button x:Name="sandwichesClick" Margin="26,52,500.6,208" Click="SandwichesClick_Click" Background="Transparent" Grid.ColumnSpan="2" Grid.RowSpan="2" Grid.Column="1">
             <StackPanel>
                 <Image Source="/WawaMenuApp;component/images/burrito.png" Height="94" Width="183" VerticalAlignment="Bottom" HorizontalAlignment="Left" />
-                <TextBlock HorizontalAlignment="Center" FontFamily="Comic Sans MS" FontSize="20" FontWeight="Bold" Foreground="#FFFAFAFA"><Run Text="Breakfast Sandwiches"/></TextBlock>
+                <TextBlock HorizontalAlignment="Center" FontFamily="Comic Sans MS" FontSize="20" FontWeight="Bold" Foreground="#FF73411C"><Run Text="Breakfast Sandwiches"/></TextBlock>
             </StackPanel>
         </Button>
-        <Button Margin="158,52,246,208" Click="Button_Click" Background="#FF73411C" Grid.Column="2" Grid.RowSpan="2">
+        <Button Margin="158,52,246,208" Click="Button_Click" Background="Transparent" Grid.Column="2" Grid.RowSpan="2">
             <StackPanel>
                 <Image Source="/WawaMenuApp;component/images/oatmeal.png" Height="112" Width="186" />
-                <TextBlock HorizontalAlignment="Center" FontFamily="Comic Sans MS" FontSize="20" FontWeight="Bold" Foreground="#FFFAFAFA"><Run Text="Oatmeal"/></TextBlock>
+                <TextBlock HorizontalAlignment="Center" FontFamily="Comic Sans MS" FontSize="20" FontWeight="Bold" Foreground="#FF73411C"><Run Text="Oatmeal"/></TextBlock>
             </StackPanel>
         </Button>
-        <Button Margin="26,102.6,500.6,52" Click="Button_Click" Background="#FF73411C" Grid.ColumnSpan="2" Grid.Row="1" Grid.Column="1">
+        <Button Margin="26,102.6,500.6,52" Click="Button_Click" Background="Transparent" Grid.ColumnSpan="2" Grid.Row="1" Grid.Column="1">
             <StackPanel>
                 <Image Source="/WawaMenuApp;component/images/fruit.jpg" Height="92" Width="195" />
-                <TextBlock HorizontalAlignment="Center" FontFamily="Comic Sans MS" FontSize="20" FontWeight="Bold" Foreground="#FFFAFAFA" Height="25"><Run Text="Fruit Bowl"/></TextBlock>
+                <TextBlock HorizontalAlignment="Center" FontFamily="Comic Sans MS" FontSize="20" FontWeight="Bold" Foreground="#FF73411C" Height="25"><Run Text="Fruit Bowl"/></TextBlock>
             </StackPanel>
         </Button>
-        <ListBox x:Name="orderBox" HorizontalAlignment="Left" Height="326" Margin="424.8,47,0,0" VerticalAlignment="Top" Width="197" Grid.Column="2" Grid.RowSpan="2">
+        <ListBox x:Name="orderBox" HorizontalAlignment="Left" Height="269" Margin="423.8,52,0,0" VerticalAlignment="Top" Width="197" Grid.Column="2" Grid.RowSpan="2">
             <ListBoxItem Content="Ham Sandwich...$5.00" FontSize="18"/>
             <ListBoxItem Content="Fruit Bowl...$3.00" FontSize="18"/>
             <ListBoxItem Content="Total: $8.00" FontSize="18"/>
         </ListBox>
-        <Button x:Name="backButton" HorizontalAlignment="Left" Margin="505,182,0,0" VerticalAlignment="Top" Width="114" Height="28" FontFamily="Segoe UI Black" FontSize="20" Background="#FFD93030" Click="BackButton_Click" Grid.Column="2" Grid.Row="1">
+        <Button x:Name="backButton" HorizontalAlignment="Left" Margin="85.2,267.6,0,0" VerticalAlignment="Top" Width="114" Height="28" FontFamily="Segoe UI Black" FontSize="20" Background="#FFD93030" Click="BackButton_Click" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2">
             <StackPanel>
                 <TextBlock HorizontalAlignment="Center" FontFamily="Comic Sans MS" FontSize="20" FontWeight="Bold" Foreground="#FFFAFAFA"><Run Text="BACK"/></TextBlock>
             </StackPanel>
         </Button>
-        <Image HorizontalAlignment="Left" Height="28" Margin="425,182,0,0" VerticalAlignment="Top" Width="80" Stretch="Fill" Source="images/back.png" Grid.Column="2" Grid.Row="1"/>
-        <Button Margin="158,105,246,52" Background="#FF73411C" Grid.Column="2" Grid.Row="1">
+        <Image HorizontalAlignment="Left" Height="28" Margin="0.2,267.6,0,0" VerticalAlignment="Top" Width="80" Stretch="Fill" Source="images/back.png" Grid.Column="1" Grid.Row="1"/>
+        <Button Margin="158,105,246,52" Background="Transparent" Grid.Column="2" Grid.Row="1">
             <StackPanel>
                 <Image Source="images/bowl.png" Height="91" Width="186" VerticalAlignment="Bottom" HorizontalAlignment="Left" />
-                <TextBlock HorizontalAlignment="Center" FontFamily="Comic Sans MS" FontSize="20" FontWeight="Bold" Foreground="#FFFAFAFA"><Run Text="Breakfast Bowl"/></TextBlock>
+                <TextBlock HorizontalAlignment="Center" FontFamily="Comic Sans MS" FontSize="20" FontWeight="Bold" Foreground="#FF73411C"><Run Text="Breakfast Bowl"/></TextBlock>
             </StackPanel>
         </Button>
-        <Button x:Name="clearOrderBtn" HorizontalAlignment="Left" Margin="461,215,0,0" VerticalAlignment="Top" Width="114" Height="28" FontFamily="Segoe UI Black" FontSize="20" Background="#FFD93030" Click="ClearOrderBtn_Click" Grid.Column="2" Grid.Row="1">
+        <Button x:Name="clearOrderBtn" HorizontalAlignment="Left" Margin="467.8,211.6,0,0" VerticalAlignment="Top" Width="114" Height="28" FontFamily="Segoe UI Black" FontSize="20" Background="#FFD93030" Click="ClearOrderBtn_Click" Grid.Column="2" Grid.Row="1">
             <StackPanel>
                 <TextBlock HorizontalAlignment="Center" FontFamily="Comic Sans MS" FontSize="18" FontWeight="Bold" Foreground="#FFFAFAFA" Width="107"><Run Text="Clear Order"/></TextBlock>
             </StackPanel>

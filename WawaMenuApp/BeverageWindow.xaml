@@ -14,55 +14,56 @@
         <Rectangle Fill="#FFE7D6BA" HorizontalAlignment="Left" Height="47" Margin="0,373,-0.4,0" VerticalAlignment="Top" Width="794" Grid.ColumnSpan="2"/>
         <Rectangle Fill="#FFE7D6BA" HorizontalAlignment="Left" Height="47" Margin="0,0,-0.4,0" VerticalAlignment="Top" Width="794" Grid.ColumnSpan="2"/>
         <TextBlock Margin="15,10,4.6,0" TextWrapping="Wrap" Text="Welcome to Wawa" VerticalAlignment="Top" Height="31" Width="774" FontFamily="Officina Sans" FontSize="22" Foreground="Red" FontWeight="Bold" Grid.ColumnSpan="2"/>
-        <Button Margin="51,67,242.6,217" Background="#FF73411C" Click="Button_Click">
+        <Button Margin="51,67,242.6,217" Background="#FF73411C" Click="ColdbrewButton">
             <StackPanel>
                 <Image Source="/WawaMenuApp;component/images/coldbrew.png" Height="100" Width="100" VerticalAlignment="Bottom" HorizontalAlignment="Center" />
                 <TextBlock HorizontalAlignment="Center" FontFamily="Comic Sans MS" FontSize="18"><Run Text="Cold Brew/Iced Coffee"/></TextBlock>
             </StackPanel>
         </Button>
-        <Button Margin="50,236,242.6,53" Click="Button_Click">
+        <Button Margin="50,236,242.6,53" Click="Chaitea_Click">
             <StackPanel>
                 <Image Source="/WawaMenuApp;component/images/icedchaitea.png" Height="100" Width="100" />
                 <TextBlock HorizontalAlignment="Center" FontFamily="Comic Sans MS"><Run Text="Chai Tea"/></TextBlock>
             </StackPanel>
         </Button>
-        <Button x:Name="backButton" HorizontalAlignment="Left" Margin="15,382,0,0" VerticalAlignment="Top" Width="114" Height="28" FontFamily="Segoe UI Black" FontSize="20" Background="#FFD93030" Click="BackButton_Click">
+        <Button x:Name="backButton" HorizontalAlignment="Left" Margin="15,382,0,0" Width="110" Height="28" FontFamily="Segoe UI Black" FontSize="20" Background="#FF73411C" Click="BackButton_Click" VerticalAlignment="Top">
             <StackPanel>
-                <TextBlock HorizontalAlignment="Center" FontFamily="Comic Sans MS" FontSize="20" FontWeight="Bold" Foreground="#FFFAFAFA"><Run Text="BACK"/></TextBlock>
+                <TextBlock HorizontalAlignment="Center" FontFamily="Comic Sans MS" FontSize="20" FontWeight="Bold" Foreground="#FF73411C"><Run Text="BACK"/></TextBlock>
             </StackPanel>
         </Button>
-        <Button Margin="304,67,284.6,217" Click="Button_Click" Grid.ColumnSpan="2">
+        <Button Margin="304,67,284.6,217" Click="Fruitsmoothie_Click" Grid.ColumnSpan="2">
             <StackPanel>
                 <Image Source="/WawaMenuApp;component/images/fruitsmoothie.png" Height="100" Width="100" />
                 <TextBlock HorizontalAlignment="Center"><Run Text="Fruit Smoothie" FontFamily="Comic Sans MS"/></TextBlock>
             </StackPanel>
         </Button>
-        <ListBox HorizontalAlignment="Left" Height="315" Margin="73.46,52,0,0" VerticalAlignment="Top" Width="197" Grid.Column="1">
-            <ListBoxItem Content="Ham Sandwich...$5.00" FontSize="18"/>
-            <ListBoxItem Content="Fruit Bowl...$3.00" FontSize="18"/>
-            <ListBoxItem Content="Total: $8.00" FontSize="18"/>
+        <ListBox  x:Name="orderBox" TextBlock.FontSize="14" HorizontalAlignment="Left" Height="276" Margin="70.4,52,0,0" VerticalAlignment="Top" Width="203" Grid.Column="1">
         </ListBox>
-        <Button Margin="304,236,284.6,53" Click="Button_Click" Grid.ColumnSpan="2">
+
+        <Button Margin="304,236,284.6,53" Click="Lattes_Click" Grid.ColumnSpan="2">
             <StackPanel>
                 <Image Source="images/icedlattes.png" Height="100" Width="100" />
                 <TextBlock HorizontalAlignment="Center"><Run Text="Lattes" FontFamily="Comic Sans MS"/></TextBlock>
             </StackPanel>
         </Button>
-
-
+        <Button x:Name="clearOrderBtn" HorizontalAlignment="Left" Margin="110.4,333,0,0" VerticalAlignment="Top" Width="114" Height="28" FontFamily="Segoe UI Black" FontSize="20" Click="ClearOrderBtn_Click" Grid.Column="1">
+            <StackPanel>
+                <TextBlock HorizontalAlignment="Center" FontFamily="Comic Sans MS" FontSize="18" FontWeight="Bold" Foreground="#FFD93030" Width="107"><Run Text="Clear Order"/></TextBlock>
+            </StackPanel>
+        </Button>
     </Grid>
 
 
     <Window.Resources>
         <Style TargetType="{x:Type Button}">
 
-            <Setter Property="Foreground" Value="White" />
+            <Setter Property="Foreground" Value="#FF73411C" />
             <Setter Property="FontSize" Value="20" />
 
             <Setter Property="Template">
                 <Setter.Value>
                     <ControlTemplate TargetType="{x:Type Button}">
-                        <Border CornerRadius="4" Background="#FF73411C">
+                        <Border CornerRadius="4" Background="Transparent">
                             <Grid>
                                 <ContentPresenter x:Name="MyContentPresenter"  HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,0,0,0" />
                             </Grid>
@@ -73,7 +74,6 @@
         </Style>
 
     </Window.Resources>
-
 
 
 </Window>

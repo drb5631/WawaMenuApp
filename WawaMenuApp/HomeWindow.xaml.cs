@@ -43,5 +43,10 @@ namespace WawaMenuApp
         {
             MessageBox.Show("This button works.");
         }
+
+        private void CompleteOrder_Click(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show("Your order is being made. Please pay at the register before picking up. \nThank you for choosing Wawa!");
+        }
     }
 }
