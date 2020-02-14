@@ -22,7 +22,7 @@
             <TextBlock Margin="15,10,4.6,0" TextWrapping="Wrap" Text="Welcome to Wawa" VerticalAlignment="Top" Height="31" Width="774" FontFamily="Officina Sans" FontSize="22" Foreground="Red" FontWeight="Bold" Grid.ColumnSpan="3"/>
             <Button x:Name="hotSandwichesClick" Margin="26,52,500.6,208" Click="SandwichesClick_Click" Background="Transparent" Grid.ColumnSpan="2" Grid.RowSpan="2" Grid.Column="1">
                 <StackPanel>
-                    <Image Height="108" Source="Image1.png" Stretch="Fill" Width="202"/>
+                    <Image Height="108" Source=".png" Stretch="Fill" Width="202"/>
                     <TextBlock HorizontalAlignment="Center" FontFamily="Comic Sans MS" FontSize="20" FontWeight="Bold" Foreground="#FF73411C" Text="Hot Sandwiches"/>
                 </StackPanel>
             </Button>
