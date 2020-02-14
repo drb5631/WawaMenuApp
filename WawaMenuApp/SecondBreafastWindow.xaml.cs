@@ -35,6 +35,11 @@ namespace WawaMenuApp
         {
         
         }
+        
+        private void ListBox_SelectionChanged(object sender, RoutedEventArgs e)
+        {
+
+        }
 
         private void EggSandwich_Click(object sender, RoutedEventArgs e)
         {
