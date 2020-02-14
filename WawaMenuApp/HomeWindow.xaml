@@ -4,15 +4,20 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         mc:Ignorable="d"
-        Title="Home Screen" Height="450" Width="800" ResizeMode="NoResize">
+        Title="Home" Height="450" Width="800" ResizeMode="NoResize">
 
 
     <Grid>
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="White" Offset="0"/>
+                <GradientStop Color="#FFE7D6BA" Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.Background>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="249*"/>
             <ColumnDefinition Width="148*"/>
         </Grid.ColumnDefinitions>
-        <Rectangle Fill="#FFE7D6BA" HorizontalAlignment="Left" Height="47" Margin="0,373,-0.4,0" VerticalAlignment="Top" Width="794" Grid.ColumnSpan="2"/>
         <Rectangle Fill="#FFE7D6BA" HorizontalAlignment="Left" Height="47" Margin="0,0,-0.4,0" VerticalAlignment="Top" Width="794" Grid.ColumnSpan="2"/>
         <TextBlock Margin="15,10,4.6,0" TextWrapping="Wrap" Text="Welcome to Wawa" VerticalAlignment="Top" Height="31" Width="774" FontFamily="Officina Sans" FontSize="28" Foreground="Red" FontWeight="Bold" Grid.ColumnSpan="2"/>
         <Button x:Name="btnBreakfast" Margin="48,52,221.54,218" Background="Transparent" Click="BtnBreakfast_Click">
@@ -39,6 +44,7 @@
             <ListBoxItem Content="Total: $8.00" FontSize="18"/>
         </ListBox>
         <Button x:Name="CompleteOrder" Content="Complete Order" Grid.Column="1" FontFamily="Comic Sans MS" Foreground="#FFD93030" HorizontalAlignment="Left" Margin="95.4,330,0,0" VerticalAlignment="Top" Width="161" RenderTransformOrigin="0.28,0.458" Background="Red" Click="CompleteOrder_Click" FontWeight="Bold"/>
+        <TextBlock Grid.Column="1" HorizontalAlignment="Left" Margin="129,396,0,0" TextWrapping="Wrap" Text="David Richard  Blon, Sierra Chiu, Brian Tu" VerticalAlignment="Top" Height="15" Width="162" FontSize="9"/>
 
 
     </Grid>

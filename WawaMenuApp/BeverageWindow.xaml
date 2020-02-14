@@ -28,7 +28,7 @@
         </Button>
         <Button x:Name="backButton" HorizontalAlignment="Left" Margin="15,382,0,0" Width="110" Height="28" FontFamily="Segoe UI Black" FontSize="20" Background="#FF73411C" Click="BackButton_Click" VerticalAlignment="Top">
             <StackPanel>
-                <TextBlock HorizontalAlignment="Center" FontFamily="Comic Sans MS" FontSize="20" FontWeight="Bold" Foreground="#FF73411C"><Run Text="BACK"/></TextBlock>
+                <TextBlock HorizontalAlignment="Center" FontFamily="Comic Sans MS" FontSize="20" FontWeight="Bold" Foreground="#FF73411C" RenderTransformOrigin="0.502,-0.931"><Run Text="BACK"/></TextBlock>
             </StackPanel>
         </Button>
         <Button Margin="304,67,284.6,217" Click="Fruitsmoothie_Click" Grid.ColumnSpan="2">
