@@ -22,19 +22,19 @@
             <TextBlock Margin="15,10,4.6,0" TextWrapping="Wrap" Text="Welcome to Wawa" VerticalAlignment="Top" Height="31" Width="774" FontFamily="Officina Sans" FontSize="22" Foreground="Red" FontWeight="Bold" Grid.ColumnSpan="3"/>
             <Button x:Name="meatballSandwich" Margin="26,52,500.6,208" Click="meatballsub_Click" Background="Transparent" Grid.ColumnSpan="2" Grid.RowSpan="2" Grid.Column="1">
                 <StackPanel>
-                    <Image Height="130" Source="Image1.png" Stretch="Fill" Width="226"/>
+                    <Image Height="130" Source="images/meatballsub.png" Stretch="Fill" Width="226"/>
                     <TextBlock HorizontalAlignment="Center" FontFamily="Comic Sans MS" FontSize="20" FontWeight="Bold" Foreground="#FF73411C" Text="Meatball Subs" Width="149" TextAlignment="Center"/>
                 </StackPanel>
             </Button>
             <Button x:Name="flatbreads" Margin="135.8,89,272.6,147" Click="flatbread_Click" Background="Transparent" Grid.Column="2" Grid.RowSpan="2">
                 <StackPanel>
-                    <Image Height="126" Source="Image3.png" Stretch="Fill" Width="188"/>
+                    <Image Height="126" Source="images\flatbread.png" Stretch="Fill" Width="188"/>
                     <TextBlock HorizontalAlignment="Center" FontFamily="Comic Sans MS" FontSize="20" FontWeight="Bold" Foreground="#FF73411C" Width="208" Text="Flatbreads" TextAlignment="Center"/>
                 </StackPanel>
             </Button>
             <Button x:Name="chicken_sandwiches" Margin="26,102.6,500.6,52" Click="chickensandwiches_Click" Background="Transparent" Grid.ColumnSpan="2" Grid.Row="1" Grid.Column="1">
                 <StackPanel>
-                    <Image Height="106" Source="Image2.png" Stretch="Fill" Width="228"/>
+                    <Image Height="106" Source="images\chicken.png" Stretch="Fill" Width="228"/>
                     <TextBlock HorizontalAlignment="Center" FontFamily="Comic Sans MS" FontSize="20" FontWeight="Bold" Foreground="#FF73411C" Text="Chicken Sandwiches"/>
                 </StackPanel>
             </Button>
