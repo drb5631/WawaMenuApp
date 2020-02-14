@@ -47,5 +47,15 @@ namespace WawaMenuApp
         {
             orderBox.Items.Clear();
         }
+
+        private void OrderBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
+        }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

@@ -58,8 +58,14 @@
     <Compile Include="BeverageWindow.xaml.cs">
       <DependentUpon>BeverageWindow.xaml</DependentUpon>
     </Compile>
+    <Compile Include="LunchandDinner.xaml.cs">
+      <DependentUpon>LunchandDinner.xaml</DependentUpon>
+    </Compile>
     <Compile Include="SecondBreafastWindow.xaml.cs">
       <DependentUpon>SecondBreafastWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HotSandwiches.xaml.cs">
+      <DependentUpon>HotSandwiches.xaml</DependentUpon>
     </Compile>
     <Page Include="BreakfastWindow.xaml">
       <SubType>Designer</SubType>
@@ -84,7 +90,15 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="LunchandDinner.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="SecondBreafastWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="HotSandwiches.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -155,6 +169,27 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="images\Beverages.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\hotsandwiches.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\coldsandwiches.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\sides.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\soups.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\meatballsub.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\chickensandwiches.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\flatbread.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -37,7 +37,7 @@
                 <TextBlock HorizontalAlignment="Center" FontFamily="Comic Sans MS" FontSize="20" FontWeight="Bold" Foreground="#FF73411C" Height="25"><Run Text="Fruit Bowl"/></TextBlock>
             </StackPanel>
         </Button>
-        <ListBox x:Name="orderBox" HorizontalAlignment="Left" Height="269" Margin="423.8,52,0,0" VerticalAlignment="Top" Width="197" Grid.Column="2" Grid.RowSpan="2">
+        <ListBox x:Name="orderBox" HorizontalAlignment="Left" Height="269" Margin="423.8,52,0,0" VerticalAlignment="Top" Width="197" Grid.Column="2" Grid.RowSpan="2" SelectionChanged="OrderBox_SelectionChanged">
             <ListBoxItem Content="Ham Sandwich...$5.00" FontSize="18"/>
             <ListBoxItem Content="Fruit Bowl...$3.00" FontSize="18"/>
             <ListBoxItem Content="Total: $8.00" FontSize="18"/>
@@ -48,15 +48,15 @@
             </StackPanel>
         </Button>
         <Image HorizontalAlignment="Left" Height="28" Margin="0.2,267.6,0,0" VerticalAlignment="Top" Width="80" Stretch="Fill" Source="images/back.png" Grid.Column="1" Grid.Row="1"/>
-        <Button Margin="158,105,246,52" Background="Transparent" Grid.Column="2" Grid.Row="1">
+        <Button Margin="158,105,246,52" Background="Transparent" Grid.Column="2" Grid.Row="1" Click="Button_Click_1">
             <StackPanel>
                 <Image Source="images/bowl.png" Height="91" Width="186" VerticalAlignment="Bottom" HorizontalAlignment="Left" />
                 <TextBlock HorizontalAlignment="Center" FontFamily="Comic Sans MS" FontSize="20" FontWeight="Bold" Foreground="#FF73411C"><Run Text="Breakfast Bowl"/></TextBlock>
             </StackPanel>
         </Button>
-        <Button x:Name="clearOrderBtn" HorizontalAlignment="Left" Margin="467.8,211.6,0,0" VerticalAlignment="Top" Width="114" Height="28" FontFamily="Segoe UI Black" FontSize="20" Background="#FFD93030" Click="ClearOrderBtn_Click" Grid.Column="2" Grid.Row="1">
+        <Button x:Name="clearOrderBtn" HorizontalAlignment="Left" Margin="443.8,211.6,0,0" VerticalAlignment="Top" Width="138" Height="28" FontFamily="Segoe UI Black" FontSize="20" Background="#FFD93030" Click="ClearOrderBtn_Click" Grid.Column="2" Grid.Row="1">
             <StackPanel>
-                <TextBlock HorizontalAlignment="Center" FontFamily="Comic Sans MS" FontSize="18" FontWeight="Bold" Foreground="#FFFAFAFA" Width="107"><Run Text="Clear Order"/></TextBlock>
+                <TextBlock HorizontalAlignment="Center" FontFamily="Comic Sans MS" FontSize="16" FontWeight="Bold" Foreground="#FFFAFAFA" Width="98" TextAlignment="Center" Text="Clear Order"/>
             </StackPanel>
         </Button>
     </Grid>
