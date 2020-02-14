@@ -26,8 +26,8 @@ namespace WawaMenuApp
 
         private void SandwichesClick_Click(object sender, RoutedEventArgs e)
         {
-            SecondLunchandDinner sbw = new SecondLunchandDinner();
-            sbw.Show();
+            HotSandwiches hs = new HotSandwiches();
+            hs.Show();
             this.Close();
         }
 

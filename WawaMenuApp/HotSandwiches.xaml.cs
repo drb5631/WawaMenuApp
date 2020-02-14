@@ -24,12 +24,13 @@ namespace WawaMenuApp
             InitializeComponent();
         }
 
-        private void InitializeComponent()
+
+        private void Button_Click(object sender, RoutedEventArgs e)
         {
-            throw new NotImplementedException();
+
         }
 
-        private void SecondBreakfastBackBtn_Click(object sender, RoutedEventArgs e)
+        private void hotSandwichesBackBtn_Click(object sender, RoutedEventArgs e)
         {
             LunchandDinner bf = new LunchandDinner();
             bf.Show();

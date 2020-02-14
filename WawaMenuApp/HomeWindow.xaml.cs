@@ -25,6 +25,12 @@ namespace WawaMenuApp
             InitializeComponent();
         }
 
+    
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
         private void BtnBreakfast_Click(object sender, RoutedEventArgs e)
         {
             BreakfastWindow bw = new BreakfastWindow();
@@ -39,9 +45,11 @@ namespace WawaMenuApp
             this.Close();
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void LunchDinerButton_Click(object sender, RoutedEventArgs e)
         {
-            MessageBox.Show("This button works.");
+            LunchandDinner ld = new LunchandDinner();
+            ld.Show();
+            this.Close();
         }
 
         private void CompleteOrder_Click(object sender, RoutedEventArgs e)

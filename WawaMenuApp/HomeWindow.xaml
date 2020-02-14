@@ -26,7 +26,7 @@
                 <TextBlock HorizontalAlignment="Center" Foreground="#FF73411C" FontFamily="Comic Sans MS"><Run Text="Breakfast"/></TextBlock>
             </StackPanel>
         </Button>
-        <Button Margin="301,53,264.6,217" Click="Button_Click" Grid.ColumnSpan="2">
+        <Button x:Name="lunchDinerButton" Margin="301,53,264.6,217" Click="LunchDinerButton_Click" Grid.ColumnSpan="2">
             <StackPanel>
                 <Image Source="/WawaMenuApp;component/images/lunchdinner.png" Height="96" Width="215" />
                 <TextBlock HorizontalAlignment="Center" Foreground="#FF73411C" FontFamily="Comic Sans MS"><Run Text="Lunch/Dinner"/></TextBlock>
