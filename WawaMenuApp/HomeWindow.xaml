@@ -38,13 +38,9 @@
                 <TextBlock HorizontalAlignment="Center"><Run Text="Beverages" Foreground="#FF73411C" FontFamily="Comic Sans MS"/></TextBlock>
             </StackPanel>
         </Button>
-        <ListBox HorizontalAlignment="Left" Height="265" Margin="73.4,52,0,0" VerticalAlignment="Top" Width="197" Grid.Column="1">
-            <ListBoxItem Content="Ham Sandwich...$5.00" FontSize="18"/>
-            <ListBoxItem Content="Fruit Bowl...$3.00" FontSize="18"/>
-            <ListBoxItem Content="Total: $8.00" FontSize="18"/>
-        </ListBox>
+        <ListBox HorizontalAlignment="Left" Height="265" Margin="73.4,52,0,0" VerticalAlignment="Top" Width="197" Grid.Column="1"/>
         <Button x:Name="CompleteOrder" Content="Complete Order" Grid.Column="1" FontFamily="Comic Sans MS" Foreground="#FFD93030" HorizontalAlignment="Left" Margin="95.4,330,0,0" VerticalAlignment="Top" Width="161" RenderTransformOrigin="0.28,0.458" Background="Red" Click="CompleteOrder_Click" FontWeight="Bold"/>
-        <TextBlock Grid.Column="1" HorizontalAlignment="Left" Margin="129,396,0,0" TextWrapping="Wrap" Text="David Richard  Blon, Sierra Chiu, Brian Tu" VerticalAlignment="Top" Height="15" Width="162" FontSize="9"/>
+        <TextBlock Grid.Column="1" HorizontalAlignment="Left" Margin="129,396,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="15" Width="162" FontSize="9"><Run Text="Sierra Chiu, Ricky Patel, "/><Run Text="Dave Blon"/></TextBlock>
 
 
     </Grid>

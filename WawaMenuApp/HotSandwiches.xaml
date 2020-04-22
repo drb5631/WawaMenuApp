@@ -23,26 +23,22 @@
             <Button x:Name="meatballSandwich" Margin="26,52,500.6,208" Click="meatballsub_Click" Background="Transparent" Grid.ColumnSpan="2" Grid.RowSpan="2" Grid.Column="1">
                 <StackPanel>
                     <Image Height="111" Source="images/meatballsub.jpg" Stretch="Fill" Width="226"/>
-                    <TextBlock HorizontalAlignment="Center" FontFamily="Comic Sans MS" FontSize="20" FontWeight="Bold" Foreground="#FF73411C" Text="Meatball Subs" Width="149" TextAlignment="Center"/>
+                    <TextBlock HorizontalAlignment="Center" FontFamily="Comic Sans MS" FontSize="20" FontWeight="Bold" Foreground="#FF73411C" Text="Meatball Sub" Width="149" TextAlignment="Center"/>
                 </StackPanel>
             </Button>
             <Button x:Name="flatbreads" Margin="147.4,90,260.6,146" Background="Transparent" Grid.Column="2" Grid.RowSpan="2">
                 <StackPanel>
                     <Image Height="126" Source="images\flatbread.png" Stretch="Fill" Width="188"/>
-                    <TextBlock HorizontalAlignment="Center" FontFamily="Comic Sans MS" FontSize="20" FontWeight="Bold" Foreground="#FF73411C" Width="208" Text="Flatbreads" TextAlignment="Center"/>
+                    <TextBlock HorizontalAlignment="Center" FontFamily="Comic Sans MS" FontSize="20" FontWeight="Bold" Foreground="#FF73411C" Width="208" Text="Flatbread" TextAlignment="Center"/>
                 </StackPanel>
             </Button>
             <Button x:Name="chicken_sandwiches" Margin="26,102,500.6,49" Click="chickensandwiches_Click" Background="Transparent" Grid.ColumnSpan="2" Grid.Row="1" Grid.Column="1">
                 <StackPanel>
                     <Image Height="106" Source="images\chicken.png" Stretch="Fill" Width="228"/>
-                    <TextBlock HorizontalAlignment="Center" FontFamily="Comic Sans MS" FontSize="20" FontWeight="Bold" Foreground="#FF73411C" Text="Chicken Sandwiches"/>
+                    <TextBlock HorizontalAlignment="Center" FontFamily="Comic Sans MS" FontSize="20" FontWeight="Bold" Foreground="#FF73411C" Text="Chicken Sandwich"/>
                 </StackPanel>
             </Button>
-            <ListBox HorizontalAlignment="Left" Height="267" Margin="423.4,52,0,0" VerticalAlignment="Top" Width="197" Grid.Column="2" Grid.RowSpan="2">
-                <ListBoxItem Content="Ham Sandwich...$5.00" FontSize="18"/>
-                <ListBoxItem Content="Fruit Bowl...$3.00" FontSize="18"/>
-                <ListBoxItem Content="Total: $8.00" FontSize="18"/>
-            </ListBox>
+            <ListBox HorizontalAlignment="Left" Height="267" Margin="423.4,52,0,0" VerticalAlignment="Top" Width="197" Grid.Column="2" Grid.RowSpan="2"/>
             <Button x:Name="hotSandwichesBackBtn" HorizontalAlignment="Left" Margin="79,267,0,0" VerticalAlignment="Top" Width="114" Height="28" FontFamily="Segoe UI Black" FontSize="20" Background="#FFD93030" Click="hotSandwichesBackBtn_Click" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="2">
                 <StackPanel>
                     <TextBlock HorizontalAlignment="Center" FontFamily="Comic Sans MS" FontSize="20" FontWeight="Bold" Foreground="#FFFAFAFA"><Run Text="BACK"/></TextBlock>

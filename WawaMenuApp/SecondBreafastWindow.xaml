@@ -38,11 +38,7 @@
                     <TextBlock HorizontalAlignment="Center" FontFamily="Comic Sans MS" FontSize="20" FontWeight="Bold" Foreground="#FF73411C"><Run Text="Breakfast Burrito"/></TextBlock>
                 </StackPanel>
             </Button>
-            <ListBox HorizontalAlignment="Left" Height="267" Margin="423.8,52,0,0" VerticalAlignment="Top" Width="197" Grid.Column="2" Grid.RowSpan="2" SelectionChanged="ListBox_SelectionChanged">
-                <ListBoxItem Content="Ham Sandwich...$5.00" FontSize="18"/>
-                <ListBoxItem Content="Fruit Bowl...$3.00" FontSize="18"/>
-                <ListBoxItem Content="Total: $8.00" FontSize="18"/>
-            </ListBox>
+            <ListBox HorizontalAlignment="Left" Height="267" Margin="423.8,52,0,0" VerticalAlignment="Top" Width="197" Grid.Column="2" Grid.RowSpan="2" SelectionChanged="ListBox_SelectionChanged"/>
             <Button x:Name="secondBreakfastBackBtn" HorizontalAlignment="Left" Margin="79.2,267.6,0,0" VerticalAlignment="Top" Width="114" Height="28" FontFamily="Segoe UI Black" FontSize="20" Background="#FFD93030" Click="SecondBreakfastBackBtn_Click" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="2">
                 <StackPanel>
                     <TextBlock HorizontalAlignment="Center" FontFamily="Comic Sans MS" FontSize="20" FontWeight="Bold" Foreground="#FFFAFAFA"><Run Text="BACK"/></TextBlock>
