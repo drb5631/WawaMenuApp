@@ -19,6 +19,7 @@ namespace WawaMenuApp
     /// </summary>
     public partial class SecondBreafastWindow : Window
     {
+
         public SecondBreafastWindow()
         {
             InitializeComponent();
@@ -26,8 +27,7 @@ namespace WawaMenuApp
 
         private void SecondBreakfastBackBtn_Click(object sender, RoutedEventArgs e)
         {
-            BreakfastWindow bf = new BreakfastWindow();
-            bf.Show();
+            App.Current.MainWindow.Show();
             this.Close();
         }
 
@@ -43,17 +43,17 @@ namespace WawaMenuApp
 
         private void EggSandwich_Click(object sender, RoutedEventArgs e)
         {
-            MessageBox.Show("Out of Stock!");
+            orderBox.Items.Add("Egg Sandwich    $2.26");
         }
 
         private void Bagel_Click(object sender, RoutedEventArgs e)
         {
-            MessageBox.Show("Out of Stock!");
+            orderBox.Items.Add("Bagel    $2.26");
         }
 
         private void Burrito2_Click(object sender, RoutedEventArgs e)
         {
-            MessageBox.Show("Out of Stock!");
+            orderBox.Items.Add("Breakfast Buritto    $2.26");
         }
     }
 }

@@ -25,7 +25,11 @@ namespace WawaMenuApp
             InitializeComponent();
         }
 
-    
+        BreakfastWindow bw = new BreakfastWindow();
+        SecondBreafastWindow sbw = new SecondBreafastWindow();
+        LunchandDinner ld = new LunchandDinner();
+        BeverageWindow bevW = new BeverageWindow();
+
         private void Button_Click(object sender, RoutedEventArgs e)
         {
 
@@ -33,28 +37,27 @@ namespace WawaMenuApp
 
         private void BtnBreakfast_Click(object sender, RoutedEventArgs e)
         {
-            BreakfastWindow bw = new BreakfastWindow();
             bw.Show();
-            this.Close();
+            this.Hide();
         }
 
         private void BeverageButton(object sender, RoutedEventArgs e)
         {
-            BeverageWindow bw = new BeverageWindow();
-            bw.Show();
-            this.Close();
+            bevW.Show();
+            this.Hide();
         }
 
         private void LunchDinerButton_Click(object sender, RoutedEventArgs e)
         {
-            LunchandDinner ld = new LunchandDinner();
             ld.Show();
-            this.Close();
+            this.Hide();
         }
 
         private void CompleteOrder_Click(object sender, RoutedEventArgs e)
         {
-            MessageBox.Show("Your order is being made. Please pay at the register before picking up. \nThank you for choosing Wawa!");
+            Random random = new Random();
+            int orderNumber = random.Next(1, 101);
+            MessageBox.Show("Your order is being made. Please pay at the register before picking up. \nThank you for choosing Wawa!\nOrder Number: " + orderNumber);
         }
     }
 }

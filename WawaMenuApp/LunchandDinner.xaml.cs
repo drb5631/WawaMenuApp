@@ -19,26 +19,23 @@ namespace WawaMenuApp
     /// </summary>
     public partial class LunchandDinner : Window
     {
+        HotSandwiches hs = new HotSandwiches();
+
         public LunchandDinner()
         {
             InitializeComponent();
         }
 
-        private void SandwichesClick_Click(object sender, RoutedEventArgs e)
-        {
-            string[] x = new string[100]; 
-            orderBox.Items.CopyTo(x, 0);
-            
-            HotSandwiches hs = new HotSandwiches(x);
-            hs.Show();
-            this.Close();
-        }
-
         private void BackButton_Click(object sender, RoutedEventArgs e)
         {
-            MainWindow mw = new MainWindow();
-            mw.Show();
-            this.Close();
+            App.Current.MainWindow.Show();
+            this.Hide();
+        }
+
+        private void HotSandwiches_Click(object sender, RoutedEventArgs e) 
+        {
+            hs.Show();
+            this.Hide();
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)

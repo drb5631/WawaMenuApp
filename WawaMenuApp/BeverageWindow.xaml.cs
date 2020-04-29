@@ -26,9 +26,8 @@ namespace WawaMenuApp
         }
         private void BackButton_Click(object sender, RoutedEventArgs e)
         {
-            MainWindow mw = new MainWindow();
-            mw.Show();
-            this.Close();
+            App.Current.MainWindow.Show();
+            this.Hide();
         }
         private void ClearOrderBtn_Click(object sender, RoutedEventArgs e)
         {
