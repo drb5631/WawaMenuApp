@@ -38,7 +38,7 @@
                     <TextBlock HorizontalAlignment="Center" FontFamily="Comic Sans MS" FontSize="20" FontWeight="Bold" Foreground="#FF73411C" Height="25" Text="Sides"/>
                 </StackPanel>
             </Button>
-            <ListBox x:Name="orderBox" HorizontalAlignment="Left" Height="269" Margin="423.8,52,0,0" VerticalAlignment="Top" Width="197" Grid.Column="2" Grid.RowSpan="2"/>
+            <ListBox x:Name="orderBox" HorizontalAlignment="Left" Height="269" Margin="409.8,52,0,0" VerticalAlignment="Top" Width="197" Grid.Column="2" Grid.RowSpan="2"/>
             <Button x:Name="backButton" HorizontalAlignment="Left" Margin="0,258.6,0,10" VerticalAlignment="Top" Width="120" Height="39" FontFamily="Segoe UI Black" FontSize="20" Background="#FFD93030" Click="BackButton_Click" Grid.Row="1" Grid.ColumnSpan="2">
                 <StackPanel>
                     <TextBlock HorizontalAlignment="Center" FontFamily="Comic Sans MS" FontSize="20" FontWeight="Bold" Foreground="#FF73411C"><Run Text="BACK"/></TextBlock>
@@ -52,7 +52,7 @@
             </Button>
             <Button x:Name="clearOrderBtn" HorizontalAlignment="Left" Margin="437.8,211.6,0,0" VerticalAlignment="Top" Width="144" Height="28" FontFamily="Segoe UI Black" FontSize="20" Background="#FFD93030" Click="ClearOrderBtn_Click" Grid.Column="2" Grid.Row="1">
                 <StackPanel>
-                    <TextBlock HorizontalAlignment="Center" FontFamily="Comic Sans MS" FontSize="18" FontWeight="Bold" Foreground="#FFFAFAFA" Width="107"><Run Text="Clear Order"/></TextBlock>
+                    <TextBlock HorizontalAlignment="Center" FontFamily="Comic Sans MS" FontSize="18" FontWeight="Bold" Foreground="#FFD93030" Width="107"><Run Text="Clear Order"/></TextBlock>
                 </StackPanel>
             </Button>
         </Grid>

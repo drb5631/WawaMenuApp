@@ -35,21 +35,21 @@ namespace WawaMenuApp
         {
             BreakfastWindow bw = new BreakfastWindow();
             bw.Show();
-            this.Close();
+            this.Hide();
         }
 
         private void BeverageButton(object sender, RoutedEventArgs e)
         {
             BeverageWindow bw = new BeverageWindow();
             bw.Show();
-            this.Close();
+            this.Hide();
         }
 
         private void LunchDinerButton_Click(object sender, RoutedEventArgs e)
         {
             LunchandDinner ld = new LunchandDinner();
             ld.Show();
-            this.Close();
+            this.Hide();
         }
 
         private void CompleteOrder_Click(object sender, RoutedEventArgs e)

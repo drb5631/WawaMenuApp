@@ -38,7 +38,7 @@
                     <TextBlock HorizontalAlignment="Center" FontFamily="Comic Sans MS" FontSize="20" FontWeight="Bold" Foreground="#FF73411C"><Run Text="Breakfast Burrito"/></TextBlock>
                 </StackPanel>
             </Button>
-            <ListBox HorizontalAlignment="Left" Height="267" Margin="423.8,52,0,0" VerticalAlignment="Top" Width="197" Grid.Column="2" Grid.RowSpan="2" SelectionChanged="ListBox_SelectionChanged"/>
+            <ListBox HorizontalAlignment="Left" Height="267" Margin="407.8,52,0,0" VerticalAlignment="Top" Width="197" Grid.Column="2" Grid.RowSpan="2" SelectionChanged="ListBox_SelectionChanged"/>
             <Button x:Name="secondBreakfastBackBtn" HorizontalAlignment="Left"  Margin="0,258.6,0,10" VerticalAlignment="Top" Width="120" Height="39" FontFamily="Segoe UI Black" FontSize="20" Background="#FFD93030" Click="SecondBreakfastBackBtn_Click" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="2">
                 <StackPanel>
                     <TextBlock HorizontalAlignment="Center" FontFamily="Comic Sans MS" FontSize="20" FontWeight="Bold" Foreground="#FF73411C"><Run Text="BACK"/></TextBlock>
@@ -47,7 +47,7 @@
         </Grid>
 
     </Grid>
-    
+
     <Window.Resources>
         <Style TargetType="{x:Type Button}">
 
