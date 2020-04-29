@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WawaMenuApp"
         mc:Ignorable="d"
-        Title="Hot Sandwiches" Height="450" Width="800" Unloaded="HotSandwiches_Unloaded">
+        Title="Hot Sandwiches" Height="450" Width="800">
     <Grid>
         <Grid>
             <Grid.RowDefinitions>
