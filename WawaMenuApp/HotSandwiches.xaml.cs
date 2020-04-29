@@ -19,16 +19,7 @@ namespace WawaMenuApp
     /// </summary>
     public partial class HotSandwiches : Window
     {
-        public HotSandwiches(string[] lstData)
-        {
-           InitializeComponent();
-            int totalItems = lstData.Length;
-            for (int i = 0; i < totalItems; i++)
-            {
-                orderBox.Items.Add(lstData[i]);
-            }
-        }
-
+        public object NavigationService { get; private set; }
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
@@ -37,24 +28,22 @@ namespace WawaMenuApp
 
         private void hotSandwichesBackBtn_Click(object sender, RoutedEventArgs e)
         {
-            LunchandDinner bf = new LunchandDinner();
-            bf.Show();
-            this.Close();
+            App.Current.MainWindow.Show();
         }
 
         private void Chickensandwiches_Click(object sender, RoutedEventArgs e)
         {
-            MessageBox.Show("Out of Stock!");
+            orderBox.Items.Add("Chicken Sandwich    $2.26");
         }
 
         private void Meatballsub_Click(object sender, RoutedEventArgs e)
         {
-            MessageBox.Show("Out of Stock!");
+            orderBox.Items.Add("Meatball Sandwich    $2.26");
         }
 
         private void Flatbreads_Click(object sender, RoutedEventArgs e)
         {
-            MessageBox.Show("Out of Stock!");
+            orderBox.Items.Add("Flatbread    $2.26");
         }
     }
 }

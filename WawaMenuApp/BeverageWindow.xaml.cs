@@ -26,8 +26,7 @@ namespace WawaMenuApp
         }
         private void BackButton_Click(object sender, RoutedEventArgs e)
         {
-            MainWindow mw = new MainWindow();
-            mw.Show();
+            App.Current.MainWindow.Show();
             this.Hide();
         }
         private void ClearOrderBtn_Click(object sender, RoutedEventArgs e)
@@ -39,7 +38,6 @@ namespace WawaMenuApp
         {
 
             orderBox.Items.Add("Cold Brew/Iced Coffee    $2.26");
-            
         }
 
         private void Fruitsmoothie_Click(object sender, RoutedEventArgs e)
@@ -59,5 +57,4 @@ namespace WawaMenuApp
             orderBox.Items.Add("Lattes                               $3.69");
         }
     }
-
 }

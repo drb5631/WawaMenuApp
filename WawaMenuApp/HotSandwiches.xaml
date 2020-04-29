@@ -1,11 +1,11 @@
-﻿<Window x:Class="WawaMenuApp.HotSandwiches"
+﻿<Window x:Name="hotSandwiches" x:Class="WawaMenuApp.HotSandwiches"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WawaMenuApp"
         mc:Ignorable="d"
-        Title="SecondLunchandDinner" Height="450" Width="800">
+        Title="Hot Sandwiches" Height="450" Width="800">
     <Grid>
         <Grid>
             <Grid.RowDefinitions>
