@@ -37,24 +37,24 @@ namespace WawaMenuApp
 
         private void ColdbrewButton(object sender, RoutedEventArgs e)
         {
-            MessageBox.Show("You have selected Cold Brew/Iced Coffee.");
+
             orderBox.Items.Add("Cold Brew/Iced Coffee    $2.26");
         }
 
         private void Fruitsmoothie_Click(object sender, RoutedEventArgs e)
         {
-            MessageBox.Show("You have selected Fruit Smoothies.");
+
             orderBox.Items.Add("Fruit Smoothies               $4.53");
         }
         private void Chaitea_Click(object sender, RoutedEventArgs e)
         {
-            MessageBox.Show("You have selected Chai Tea.");
+
             orderBox.Items.Add("Chai Tea                           $3.79");
         }
 
         private void Lattes_Click(object sender, RoutedEventArgs e)
         {
-            MessageBox.Show("You have selected Lattes.");
+
             orderBox.Items.Add("Lattes                               $3.69");
         }
     }

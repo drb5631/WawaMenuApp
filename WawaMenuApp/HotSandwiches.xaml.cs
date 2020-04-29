@@ -37,17 +37,17 @@ namespace WawaMenuApp
             this.Close();
         }
 
-        private void flatbread_Click(object sender, RoutedEventArgs e)
+        private void Chickensandwiches_Click(object sender, RoutedEventArgs e)
         {
             MessageBox.Show("Out of Stock!");
         }
 
-        private void chickensandwiches_Click(object sender, RoutedEventArgs e)
+        private void Meatballsub_Click(object sender, RoutedEventArgs e)
         {
             MessageBox.Show("Out of Stock!");
         }
 
-        private void meatballsub_Click(object sender, RoutedEventArgs e)
+        private void Flatbreads_Click(object sender, RoutedEventArgs e)
         {
             MessageBox.Show("Out of Stock!");
         }

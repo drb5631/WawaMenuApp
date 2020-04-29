@@ -17,35 +17,53 @@
                 <ColumnDefinition Width="71*"/>
                 <ColumnDefinition Width="315*"/>
             </Grid.ColumnDefinitions>
-            <Rectangle Fill="#FFE7D6BA" HorizontalAlignment="Left" Height="47" Margin="0,258,-0.4,0" VerticalAlignment="Top" Width="794" Grid.ColumnSpan="3" Grid.Row="1"/>
+            <Rectangle Fill="#FFE7D6BA" HorizontalAlignment="Left" Height="47" Margin="0,263,-0.4,0" VerticalAlignment="Top" Width="794" Grid.ColumnSpan="3" Grid.Row="1"/>
             <Rectangle Fill="#FFE7D6BA" HorizontalAlignment="Left" Height="47" Margin="0,0,-0.4,0" VerticalAlignment="Top" Width="794" Grid.ColumnSpan="3"/>
-            <TextBlock Margin="15,10,4.6,0" TextWrapping="Wrap" Text="Welcome to Wawa" VerticalAlignment="Top" Height="31" FontFamily="Officina Sans" FontSize="22" Foreground="Red" FontWeight="Bold" Grid.ColumnSpan="3"/>
-            <Button x:Name="meatballSandwich" Margin="26,52,500.6,208" Click="meatballsub_Click" Background="Transparent" Grid.ColumnSpan="2" Grid.RowSpan="2" Grid.Column="1">
+            <TextBlock Margin="15,10,4.6,0" TextWrapping="Wrap" Text="Welcome to Wawa" VerticalAlignment="Top" Height="31" FontFamily="Officina Sans" FontSize="28" Foreground="Red" FontWeight="Bold" Grid.ColumnSpan="3"/>
+            <Button x:Name="meatballSandwich" Margin="26,52,500.6,208" Click="Meatballsub_Click" Background="Transparent" Grid.ColumnSpan="2" Grid.RowSpan="2" Grid.Column="1">
                 <StackPanel>
                     <Image Height="111" Source="images/meatballsub.jpg" Stretch="Fill" Width="226"/>
                     <TextBlock HorizontalAlignment="Center" FontFamily="Comic Sans MS" FontSize="20" FontWeight="Bold" Foreground="#FF73411C" Text="Meatball Sub" Width="149" TextAlignment="Center"/>
                 </StackPanel>
             </Button>
-            <Button x:Name="flatbreads" Margin="147.4,90,260.6,146" Background="Transparent" Grid.Column="2" Grid.RowSpan="2">
+            <Button x:Name="flatbreads" Margin="147.4,90,260.6,146" Background="Transparent" Grid.Column="2" Grid.RowSpan="2" Click="Flatbreads_Click">
                 <StackPanel>
                     <Image Height="126" Source="images\flatbread.png" Stretch="Fill" Width="188"/>
                     <TextBlock HorizontalAlignment="Center" FontFamily="Comic Sans MS" FontSize="20" FontWeight="Bold" Foreground="#FF73411C" Width="208" Text="Flatbread" TextAlignment="Center"/>
                 </StackPanel>
             </Button>
-            <Button x:Name="chicken_sandwiches" Margin="26,102,500.6,49" Click="chickensandwiches_Click" Background="Transparent" Grid.ColumnSpan="2" Grid.Row="1" Grid.Column="1">
+            <Button x:Name="chicken_sandwiches" Margin="26,102,500.6,49" Click="Chickensandwiches_Click" Background="Transparent" Grid.ColumnSpan="2" Grid.Row="1" Grid.Column="1">
                 <StackPanel>
                     <Image Height="106" Source="images\chicken.png" Stretch="Fill" Width="228"/>
                     <TextBlock HorizontalAlignment="Center" FontFamily="Comic Sans MS" FontSize="20" FontWeight="Bold" Foreground="#FF73411C" Text="Chicken Sandwich"/>
                 </StackPanel>
             </Button>
             <ListBox HorizontalAlignment="Left" Height="267" Margin="423.4,52,0,0" VerticalAlignment="Top" Width="197" Grid.Column="2" Grid.RowSpan="2"/>
-            <Button x:Name="hotSandwichesBackBtn" HorizontalAlignment="Left" Margin="79,267,0,0" VerticalAlignment="Top" Width="114" Height="28" FontFamily="Segoe UI Black" FontSize="20" Background="#FFD93030" Click="hotSandwichesBackBtn_Click" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="2">
+            <Button x:Name="hotSandwichesBackBtn" HorizontalAlignment="Left" Margin="0,263,0,0" VerticalAlignment="Top" Width="120" Height="39" FontFamily="Segoe UI Black" FontSize="20" Background="#FFD93030" Click="hotSandwichesBackBtn_Click" Grid.Column="1" Grid.Row="1">
                 <StackPanel>
-                    <TextBlock HorizontalAlignment="Center" FontFamily="Comic Sans MS" FontSize="20" FontWeight="Bold" Foreground="#FFFAFAFA"><Run Text="BACK"/></TextBlock>
+                    <TextBlock HorizontalAlignment="Center" FontFamily="Comic Sans MS" FontSize="20" FontWeight="Bold" Foreground="#FF73411C"><Run Text="BACK"/></TextBlock>
                 </StackPanel>
             </Button>
-            <Image HorizontalAlignment="Left" Height="28" Margin="15,267,0,0" VerticalAlignment="Top" Width="80" Stretch="Fill" Source="images/back.png" Grid.Row="1" Grid.ColumnSpan="2"/>
         </Grid>
 
     </Grid>
+    <Window.Resources>
+        <Style TargetType="{x:Type Button}">
+
+            <Setter Property="FontSize" Value="20" />
+
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type Button}">
+                        <Border CornerRadius="4" Background="Transparent">
+                            <Grid>
+                                <ContentPresenter x:Name="MyContentPresenter"  HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,0,0,0" />
+                            </Grid>
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+    </Window.Resources>
 </Window>

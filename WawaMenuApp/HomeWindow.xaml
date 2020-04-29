@@ -20,19 +20,19 @@
         </Grid.ColumnDefinitions>
         <Rectangle Fill="#FFE7D6BA" HorizontalAlignment="Left" Height="47" Margin="0,0,-0.4,0" VerticalAlignment="Top" Width="794" Grid.ColumnSpan="2"/>
         <TextBlock Margin="15,10,4.6,0" TextWrapping="Wrap" Text="Welcome to Wawa" VerticalAlignment="Top" Height="31" Width="774" FontFamily="Officina Sans" FontSize="28" Foreground="Red" FontWeight="Bold" Grid.ColumnSpan="2"/>
-        <Button x:Name="btnBreakfast" Margin="48,52,221.54,218" Background="Transparent" Click="BtnBreakfast_Click">
+        <Button x:Name="btnBreakfast" Margin="45,68,224.6,202" Background="Transparent" Click="BtnBreakfast_Click">
             <StackPanel>
                 <Image x:Name="homeBreakfast" Source="/WawaMenuApp;component/images/breakfast.png" Height="88" Width="215" VerticalAlignment="Bottom" HorizontalAlignment="Left" />
                 <TextBlock HorizontalAlignment="Center" Foreground="#FF73411C" FontFamily="Comic Sans MS"><Run Text="Breakfast"/></TextBlock>
             </StackPanel>
         </Button>
-        <Button x:Name="lunchDinerButton" Margin="301,53,264.6,217" Click="LunchDinerButton_Click" Grid.ColumnSpan="2">
+        <Button x:Name="lunchDinerButton" Margin="298,69,267.6,201" Click="LunchDinerButton_Click" Grid.ColumnSpan="2">
             <StackPanel>
                 <Image Source="/WawaMenuApp;component/images/lunchdinner.png" Height="96" Width="215" />
                 <TextBlock HorizontalAlignment="Center" Foreground="#FF73411C" FontFamily="Comic Sans MS"><Run Text="Lunch/Dinner"/></TextBlock>
             </StackPanel>
         </Button>
-        <Button Margin="165,215,104.6,55" Click="BeverageButton">
+        <Button Margin="162,231,107.6,39" Click="BeverageButton">
             <StackPanel>
                 <Image Source="/WawaMenuApp;component/images/beverages.png" Height="107" Width="215" />
                 <TextBlock HorizontalAlignment="Center"><Run Text="Beverages" Foreground="#FF73411C" FontFamily="Comic Sans MS"/></TextBlock>
