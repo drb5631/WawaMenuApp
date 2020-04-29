@@ -19,9 +19,14 @@ namespace WawaMenuApp
     /// </summary>
     public partial class HotSandwiches : Window
     {
-        public HotSandwiches()
+        public HotSandwiches(string[] lstData)
         {
-            InitializeComponent();
+           InitializeComponent();
+            int totalItems = lstData.Length;
+            for (int i = 0; i < totalItems; i++)
+            {
+                orderBox.Items.Add(lstData[i]);
+            }
         }
 
 

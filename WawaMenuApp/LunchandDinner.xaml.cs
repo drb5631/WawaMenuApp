@@ -26,7 +26,10 @@ namespace WawaMenuApp
 
         private void SandwichesClick_Click(object sender, RoutedEventArgs e)
         {
-            HotSandwiches hs = new HotSandwiches();
+            string[] x = new string[100]; 
+            orderBox.Items.CopyTo(x, 0);
+            
+            HotSandwiches hs = new HotSandwiches(x);
             hs.Show();
             this.Close();
         }
