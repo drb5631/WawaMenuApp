@@ -19,7 +19,7 @@ namespace WawaMenuApp
     /// </summary>
     public partial class BreakfastWindow : Window
     {
-        SecondBreafastWindow sbw = new SecondBreafastWindow();
+        //SecondBreafastWindow sbw = new SecondBreafastWindow();
 
         public BreakfastWindow()
         {
@@ -28,8 +28,9 @@ namespace WawaMenuApp
 
         private void BackButton_Click(object sender, RoutedEventArgs e)
         {
+            
             App.Current.MainWindow.Show();
-            this.Close();
+            this.Hide();
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
@@ -39,8 +40,8 @@ namespace WawaMenuApp
 
         private void SandwichesClick_Click(object sender, RoutedEventArgs e)
         {
-            sbw.Show();
-            this.Close();
+            //sbw.Show();
+            this.Hide();
         }
 
         private void ClearOrderBtn_Click(object sender, RoutedEventArgs e)

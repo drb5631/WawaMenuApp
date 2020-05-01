@@ -28,7 +28,7 @@ namespace WawaMenuApp
         private void SecondBreakfastBackBtn_Click(object sender, RoutedEventArgs e)
         {
             App.Current.MainWindow.Show();
-            this.Close();
+            this.Hide();
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)

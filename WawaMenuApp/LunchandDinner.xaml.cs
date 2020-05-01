@@ -19,7 +19,7 @@ namespace WawaMenuApp
     /// </summary>
     public partial class LunchandDinner : Window
     {
-        HotSandwiches hs = new HotSandwiches();
+        //HotSandwiches hs = new HotSandwiches();
 
         public LunchandDinner()
         {
@@ -34,7 +34,7 @@ namespace WawaMenuApp
 
         private void HotSandwiches_Click(object sender, RoutedEventArgs e) 
         {
-            hs.Show();
+            //hs.Show();
             this.Hide();
         }
 

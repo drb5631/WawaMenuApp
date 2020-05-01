@@ -20,15 +20,20 @@ namespace WawaMenuApp
     /// </summary>
     public partial class MainWindow : Window
     {
+        
+        BreakfastWindow bw;
+        //SecondBreafastWindow sbw = new SecondBreafastWindow();
+        LunchandDinner ld;
+        BeverageWindow bevW;
+
         public MainWindow()
         {
             InitializeComponent();
+            var w = Application.Current.MainWindow;
+            bw = new BreakfastWindow();
+            ld = new LunchandDinner();
+            bevW = new BeverageWindow();
         }
-
-        BreakfastWindow bw = new BreakfastWindow();
-        SecondBreafastWindow sbw = new SecondBreafastWindow();
-        LunchandDinner ld = new LunchandDinner();
-        BeverageWindow bevW = new BeverageWindow();
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {

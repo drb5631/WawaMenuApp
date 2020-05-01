@@ -23,21 +23,25 @@ namespace WawaMenuApp
         public BeverageWindow()
         {
             InitializeComponent();
+            var w = Application.Current.MainWindow;
         }
         private void BackButton_Click(object sender, RoutedEventArgs e)
         {
             App.Current.MainWindow.Show();
             this.Hide();
+           
         }
         private void ClearOrderBtn_Click(object sender, RoutedEventArgs e)
         {
             orderBox.Items.Clear();
         }
-
+        
         private void ColdbrewButton(object sender, RoutedEventArgs e)
         {
-
-            orderBox.Items.Add("Cold Brew/Iced Coffee    $2.26");
+            ((MainWindow)Application.Current.MainWindow).orderBox.Items.Add("Cold Brew/Iced Coffee    $2.26");
+            ((BreakfastWindow)Application.Current.Windows[1]).orderBox.Items.Add("Cold Brew/Iced Coffee    $2.26");
+            ((LunchandDinner)Application.Current.Windows[2]).orderBox.Items.Add("Cold Brew/Iced Coffee    $2.26");
+            ((BeverageWindow)Application.Current.Windows[3]).orderBox.Items.Add("Cold Brew/Iced Coffee    $2.26");
         }
 
         private void Fruitsmoothie_Click(object sender, RoutedEventArgs e)
